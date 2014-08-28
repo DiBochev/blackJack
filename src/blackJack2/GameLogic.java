@@ -1,12 +1,25 @@
 package blackJack2;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class GameLogic {
 	
 	static int pointsAll = 0;
-	static ArrayList<Integer> pastCards = new ArrayList<Integer>();
+	static ArrayList<Integer> deck = new ArrayList<Integer>();
+	
+	public static void shuffle(){
+		for (int i = 5; i <= 48; i++) {
+			deck.add(i);
+		}Collections.shuffle(deck);
+		for (int i = 0; i < deck.size(); i++) {
+			System.out.println(deck.get(i));
+		}
+		
+	}
+	
+	
 	
 	public static void random(){
 		Random rand = new Random();
@@ -19,7 +32,7 @@ public class GameLogic {
 	}
 	private static boolean cardCheck(int CardDrown){
 		boolean isExist=false;
-		if(pastCards.contains(CardDrown)){
+		if(deck.contains(CardDrown)){
 			isExist=true;
 			return isExist;
 		} else{
