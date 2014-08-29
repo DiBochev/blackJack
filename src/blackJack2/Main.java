@@ -4,7 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		//GameLogic.random();
-		GameLogic.shuffle();
+		//GameLogic.shuffle();
+		Deck deck=new Deck();
 	}
 
 }

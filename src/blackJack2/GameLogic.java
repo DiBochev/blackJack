@@ -1,4 +1,4 @@
-package blackJack2;
+/*package blackJack2;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.Random;
 public class GameLogic {
 	
 	static int pointsAll = 0;
-	static ArrayList<Integer> deck = new ArrayList<Integer>();
+	static Deque<Integer> deck = new DW<Integer>();
 	
 	public static void shuffle(){
 		for (int i = 5; i <= 48; i++) {
@@ -16,12 +16,13 @@ public class GameLogic {
 		for (int i = 0; i < deck.size(); i++) {
 			System.out.println(deck.get(i));
 		}
+		System.out.println("hgjkgjk  "+deck.get(0));
 		
 	}
 	
 	
 	
-	public static void random(){
+	/*public static void random(){
 		Random rand = new Random();
 		int cardDrawn=rand.nextInt(44)+5;
 		if(cardCheck(cardDrawn)){
@@ -29,7 +30,8 @@ public class GameLogic {
 		}
 		cardDefine(cardDrawn);
 		
-	}
+	}*/
+/*
 	private static boolean cardCheck(int CardDrown){
 		boolean isExist=false;
 		if(deck.contains(CardDrown)){
@@ -92,3 +94,4 @@ public class GameLogic {
 	}
 
 }
+*/
