@@ -3,9 +3,9 @@ package blackJack2;
 public class Main {
 
 	public static void main(String[] args) {
-		//GameLogic.random();
-		//GameLogic.shuffle();
-		Deck deck=new Deck();
+		HumanPlayer player = new HumanPlayer();
+		GameManager manager = new GameManager(player);
+		manager.StartGame();
 	}
 
 }
